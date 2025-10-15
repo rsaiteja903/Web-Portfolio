@@ -27,18 +27,18 @@ const Skills = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className={`text-4xl lg:text-5xl font-bold mb-4 ${isDark ? 'text-white' : 'text-gray-900'}`}>
             Skills & <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">Expertise</span>
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+          <p className={`text-lg max-w-2xl mx-auto ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
             Technical proficiencies and core competencies
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8">
           {/* Languages */}
-          <Card className="bg-gray-900/50 border-gray-800 p-8">
-            <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+          <Card className={`p-8 ${isDark ? 'bg-gray-900/50 border-gray-800' : 'bg-white border-gray-200'}`}>
+            <h3 className={`text-2xl font-bold mb-6 flex items-center gap-2 ${isDark ? 'text-white' : 'text-gray-900'}`}>
               <span className="w-2 h-8 bg-gradient-to-b from-emerald-400 to-emerald-600 rounded-full"></span>
               Programming Languages
             </h3>
@@ -50,8 +50,8 @@ const Skills = () => {
           </Card>
 
           {/* Frameworks */}
-          <Card className="bg-gray-900/50 border-gray-800 p-8">
-            <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+          <Card className={`p-8 ${isDark ? 'bg-gray-900/50 border-gray-800' : 'bg-white border-gray-200'}`}>
+            <h3 className={`text-2xl font-bold mb-6 flex items-center gap-2 ${isDark ? 'text-white' : 'text-gray-900'}`}>
               <span className="w-2 h-8 bg-gradient-to-b from-emerald-400 to-emerald-600 rounded-full"></span>
               Frameworks & Libraries
             </h3>
@@ -63,8 +63,8 @@ const Skills = () => {
           </Card>
 
           {/* Tools */}
-          <Card className="bg-gray-900/50 border-gray-800 p-8">
-            <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+          <Card className={`p-8 ${isDark ? 'bg-gray-900/50 border-gray-800' : 'bg-white border-gray-200'}`}>
+            <h3 className={`text-2xl font-bold mb-6 flex items-center gap-2 ${isDark ? 'text-white' : 'text-gray-900'}`}>
               <span className="w-2 h-8 bg-gradient-to-b from-emerald-400 to-emerald-600 rounded-full"></span>
               Tools & Technologies
             </h3>
@@ -76,8 +76,8 @@ const Skills = () => {
           </Card>
 
           {/* Cloud */}
-          <Card className="bg-gray-900/50 border-gray-800 p-8">
-            <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+          <Card className={`p-8 ${isDark ? 'bg-gray-900/50 border-gray-800' : 'bg-white border-gray-200'}`}>
+            <h3 className={`text-2xl font-bold mb-6 flex items-center gap-2 ${isDark ? 'text-white' : 'text-gray-900'}`}>
               <span className="w-2 h-8 bg-gradient-to-b from-emerald-400 to-emerald-600 rounded-full"></span>
               Cloud & AWS
             </h3>
@@ -89,8 +89,8 @@ const Skills = () => {
           </Card>
 
           {/* Databases */}
-          <Card className="bg-gray-900/50 border-gray-800 p-8">
-            <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+          <Card className={`p-8 ${isDark ? 'bg-gray-900/50 border-gray-800' : 'bg-white border-gray-200'}`}>
+            <h3 className={`text-2xl font-bold mb-6 flex items-center gap-2 ${isDark ? 'text-white' : 'text-gray-900'}`}>
               <span className="w-2 h-8 bg-gradient-to-b from-emerald-400 to-emerald-600 rounded-full"></span>
               Databases
             </h3>
@@ -102,8 +102,8 @@ const Skills = () => {
           </Card>
 
           {/* Competencies */}
-          <Card className="bg-gray-900/50 border-gray-800 p-8">
-            <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+          <Card className={`p-8 ${isDark ? 'bg-gray-900/50 border-gray-800' : 'bg-white border-gray-200'}`}>
+            <h3 className={`text-2xl font-bold mb-6 flex items-center gap-2 ${isDark ? 'text-white' : 'text-gray-900'}`}>
               <span className="w-2 h-8 bg-gradient-to-b from-emerald-400 to-emerald-600 rounded-full"></span>
               Core Competencies
             </h3>
@@ -112,7 +112,7 @@ const Skills = () => {
                 <Badge
                   key={index}
                   variant="secondary"
-                  className="bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 hover:bg-emerald-500/20 transition-colors duration-300 text-sm px-4 py-2"
+                  className="bg-emerald-500/10 text-emerald-500 border border-emerald-500/30 hover:bg-emerald-500/20 transition-colors duration-300 text-sm px-4 py-2"
                 >
                   {competency}
                 </Badge>
