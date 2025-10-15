@@ -119,8 +119,18 @@ const Hero = () => {
                     ? 'border-gray-700 text-gray-300 hover:bg-gray-800 hover:text-white'
                     : 'border-gray-300 text-gray-700 hover:bg-gray-100'
                   }`}
+
+                  onClick={() =>
+                      window.open(
+                        'https://drive.google.com/file/d/1evHImDJdXSahsIgaVuAvrgCfLb8lWByR/view?usp=drive_link',
+                        '_blank',
+                        'noopener,noreferrer'
+                      )
+                    }
+
               >
-                <Download className="mr-2" size={20} />
+                <Download className="mr-2" size={20} 
+                />
                 Download Resume
               </Button>
             </div>
