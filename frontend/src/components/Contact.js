@@ -119,17 +119,17 @@ const Contact = () => {
               <Card className={`p-6 hover:border-emerald-500/50 transition-all duration-300 group ${isDark ? 'bg-gray-800/50 border-gray-700' : 'bg-white border-gray-200'}`}>
                 <div className="flex items-center gap-4">
                   <div className="p-3 bg-emerald-500/10 rounded-lg group-hover:bg-emerald-500/20 transition-colors duration-300">
-                    <Github className="text-emerald-400" size={24} />
+                    <Phone className="text-emerald-400" size={24} />
                   </div>
                   <div>
-                    <p className={`text-sm ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>GitHub</p>
+                    <p className={`text-sm ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>Phone</p>
                     <a
                       href={personalInfo.github}
                       target="_blank"
                       rel="noopener noreferrer"
                       className={`hover:text-emerald-500 transition-colors duration-300 ${isDark ? 'text-white' : 'text-gray-900'}`}
                     >
-                      View my work
+                      Contact me
                     </a>
                   </div>
                 </div>
@@ -149,7 +149,7 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Contact Form */}
+          {/* Contact Form
           <Card className={`p-8 ${isDark ? 'bg-gray-800/50 border-gray-700' : 'bg-white border-gray-200'}`}>
             <h3 className={`text-2xl font-bold mb-6 ${isDark ? 'text-white' : 'text-gray-900'}`}>Send a Message</h3>
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -226,7 +226,7 @@ const Contact = () => {
                 {!isSubmitting && <Send className="ml-2 group-hover:translate-x-1 transition-transform duration-300" size={20} />}
               </Button>
             </form>
-          </Card>
+          </Card> */}
         </div>
       </div>
     </section>

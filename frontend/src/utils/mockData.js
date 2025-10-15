@@ -4,9 +4,9 @@
 export const personalInfo = {
   name: "Sai Teja Rajaboyina",
   title: "Software Engineer | Backend & Cloud Developer",
-  email: "saitejarajaboyina@my.unt.edu",
-  linkedin: "https://linkedin.com/in/SaiTejaRajaboyina",
-  github: "#", // Placeholder
+  email: "rsaiteja703@gmail.com",
+  linkedin: "https://www.linkedin.com/in/sai-teja-rajaboyina/",
+  github: "https://github.com/rsaiteja903", 
   location: "Denton, TX",
   bio: "Passionate software engineer specializing in backend development, cloud technologies, and building scalable systems. Experienced in troubleshooting, API development, and implementing secure authentication solutions."
 };
@@ -18,7 +18,7 @@ export const education = [
     institution: "University of North Texas",
     location: "Denton, TX",
     gpa: "3.9",
-    duration: "2023 - 2025",
+    duration: "2024 - 2025",
     description: "Advanced coursework in algorithms, distributed systems, and software engineering."
   },
   {
@@ -27,7 +27,7 @@ export const education = [
     institution: "CBIT Hyderabad",
     location: "Hyderabad, India",
     gpa: "3.476",
-    duration: "2017 - 2021",
+    duration: "2018 - 2022",
     description: "Strong foundation in programming, data structures, and embedded systems."
   }
 ];
@@ -48,7 +48,22 @@ export const experience = [
       "Conducted code reviews and mentored junior developers on best practices"
     ],
     technologies: ["Java", "REST APIs", "OAuth 2.0", "Agile", "Git", "Jira"]
+  },
+  {
+  id: 2,
+  title: "Junior Data Analyst",
+  company: "Cognizant",
+  location: "Hyderabad, India",
+  duration: "Feb 2022 - Jun 2022",
+  logo: "/placeholder-logo.png",
+  responsibilities: [
+    "Applied ETL techniques using Informatica for data integration, masking, and replication, ensuring data quality and consistency",
+    "Conducted SQL-based data analysis to improve reporting accuracy and support business decision-making",
+    "Collaborated with cross-functional teams in Agile environments to deliver data solutions on time"
+  ],
+    technologies: ["Informatica", "SQL", "ETL", "Agile"]
   }
+
 ];
 
 export const projects = [
