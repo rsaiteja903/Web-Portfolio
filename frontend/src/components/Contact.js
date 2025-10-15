@@ -56,14 +56,14 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gray-900">
+    <section id="contact" className={`py-20 ${isDark ? 'bg-gray-900' : 'bg-gray-100'}`}>
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className={`text-4xl lg:text-5xl font-bold mb-4 ${isDark ? 'text-white' : 'text-gray-900'}`}>
             Get In <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">Touch</span>
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+          <p className={`text-lg max-w-2xl mx-auto ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
             Have a question or want to work together? I'd love to hear from you.
           </p>
         </div>
@@ -72,24 +72,24 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold text-white mb-6">Contact Information</h3>
-              <p className="text-gray-400 mb-8">
+              <h3 className={`text-2xl font-bold mb-6 ${isDark ? 'text-white' : 'text-gray-900'}`}>Contact Information</h3>
+              <p className={`mb-8 ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
                 Feel free to reach out through any of these channels. I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
               </p>
             </div>
 
             {/* Contact Cards */}
             <div className="space-y-4">
-              <Card className="bg-gray-800/50 border-gray-700 p-6 hover:border-emerald-500/50 transition-all duration-300 group">
+              <Card className={`p-6 hover:border-emerald-500/50 transition-all duration-300 group ${isDark ? 'bg-gray-800/50 border-gray-700' : 'bg-white border-gray-200'}`}>
                 <div className="flex items-center gap-4">
                   <div className="p-3 bg-emerald-500/10 rounded-lg group-hover:bg-emerald-500/20 transition-colors duration-300">
                     <Mail className="text-emerald-400" size={24} />
                   </div>
                   <div>
-                    <p className="text-gray-400 text-sm">Email</p>
+                    <p className={`text-sm ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>Email</p>
                     <a
                       href={`mailto:${personalInfo.email}`}
-                      className="text-white hover:text-emerald-400 transition-colors duration-300"
+                      className={`hover:text-emerald-500 transition-colors duration-300 ${isDark ? 'text-white' : 'text-gray-900'}`}
                     >
                       {personalInfo.email}
                     </a>
@@ -97,18 +97,18 @@ const Contact = () => {
                 </div>
               </Card>
 
-              <Card className="bg-gray-800/50 border-gray-700 p-6 hover:border-emerald-500/50 transition-all duration-300 group">
+              <Card className={`p-6 hover:border-emerald-500/50 transition-all duration-300 group ${isDark ? 'bg-gray-800/50 border-gray-700' : 'bg-white border-gray-200'}`}>
                 <div className="flex items-center gap-4">
                   <div className="p-3 bg-emerald-500/10 rounded-lg group-hover:bg-emerald-500/20 transition-colors duration-300">
                     <Linkedin className="text-emerald-400" size={24} />
                   </div>
                   <div>
-                    <p className="text-gray-400 text-sm">LinkedIn</p>
+                    <p className={`text-sm ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>LinkedIn</p>
                     <a
                       href={personalInfo.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-white hover:text-emerald-400 transition-colors duration-300"
+                      className={`hover:text-emerald-500 transition-colors duration-300 ${isDark ? 'text-white' : 'text-gray-900'}`}
                     >
                       Connect with me
                     </a>
@@ -116,18 +116,18 @@ const Contact = () => {
                 </div>
               </Card>
 
-              <Card className="bg-gray-800/50 border-gray-700 p-6 hover:border-emerald-500/50 transition-all duration-300 group">
+              <Card className={`p-6 hover:border-emerald-500/50 transition-all duration-300 group ${isDark ? 'bg-gray-800/50 border-gray-700' : 'bg-white border-gray-200'}`}>
                 <div className="flex items-center gap-4">
                   <div className="p-3 bg-emerald-500/10 rounded-lg group-hover:bg-emerald-500/20 transition-colors duration-300">
                     <Github className="text-emerald-400" size={24} />
                   </div>
                   <div>
-                    <p className="text-gray-400 text-sm">GitHub</p>
+                    <p className={`text-sm ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>GitHub</p>
                     <a
                       href={personalInfo.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-white hover:text-emerald-400 transition-colors duration-300"
+                      className={`hover:text-emerald-500 transition-colors duration-300 ${isDark ? 'text-white' : 'text-gray-900'}`}
                     >
                       View my work
                     </a>
@@ -135,14 +135,14 @@ const Contact = () => {
                 </div>
               </Card>
 
-              <Card className="bg-gray-800/50 border-gray-700 p-6 hover:border-emerald-500/50 transition-all duration-300 group">
+              <Card className={`p-6 hover:border-emerald-500/50 transition-all duration-300 group ${isDark ? 'bg-gray-800/50 border-gray-700' : 'bg-white border-gray-200'}`}>
                 <div className="flex items-center gap-4">
                   <div className="p-3 bg-emerald-500/10 rounded-lg group-hover:bg-emerald-500/20 transition-colors duration-300">
                     <MapPin className="text-emerald-400" size={24} />
                   </div>
                   <div>
-                    <p className="text-gray-400 text-sm">Location</p>
-                    <p className="text-white">{personalInfo.location}</p>
+                    <p className={`text-sm ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>Location</p>
+                    <p className={isDark ? 'text-white' : 'text-gray-900'}>{personalInfo.location}</p>
                   </div>
                 </div>
               </Card>
@@ -150,11 +150,11 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <Card className="bg-gray-800/50 border-gray-700 p-8">
-            <h3 className="text-2xl font-bold text-white mb-6">Send a Message</h3>
+          <Card className={`p-8 ${isDark ? 'bg-gray-800/50 border-gray-700' : 'bg-white border-gray-200'}`}>
+            <h3 className={`text-2xl font-bold mb-6 ${isDark ? 'text-white' : 'text-gray-900'}`}>Send a Message</h3>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-gray-400 mb-2 text-sm">
+                <label htmlFor="name" className={`block mb-2 text-sm ${isDark ? 'text-gray-400' : 'text-gray-700'}`}>
                   Your Name
                 </label>
                 <Input
@@ -165,12 +165,12 @@ const Contact = () => {
                   onChange={handleChange}
                   placeholder="John Doe"
                   required
-                  className="bg-gray-900 border-gray-700 text-white placeholder:text-gray-500 focus:border-emerald-500"
+                  className={`${isDark ? 'bg-gray-900 border-gray-700 text-white placeholder:text-gray-500 focus:border-emerald-500' : 'bg-white border-gray-300 text-gray-900 placeholder:text-gray-400 focus:border-emerald-500'}`}
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-gray-400 mb-2 text-sm">
+                <label htmlFor="email" className={`block mb-2 text-sm ${isDark ? 'text-gray-400' : 'text-gray-700'}`}>
                   Your Email
                 </label>
                 <Input
@@ -181,12 +181,12 @@ const Contact = () => {
                   onChange={handleChange}
                   placeholder="john@example.com"
                   required
-                  className="bg-gray-900 border-gray-700 text-white placeholder:text-gray-500 focus:border-emerald-500"
+                  className={`${isDark ? 'bg-gray-900 border-gray-700 text-white placeholder:text-gray-500 focus:border-emerald-500' : 'bg-white border-gray-300 text-gray-900 placeholder:text-gray-400 focus:border-emerald-500'}`}
                 />
               </div>
 
               <div>
-                <label htmlFor="subject" className="block text-gray-400 mb-2 text-sm">
+                <label htmlFor="subject" className={`block mb-2 text-sm ${isDark ? 'text-gray-400' : 'text-gray-700'}`}>
                   Subject
                 </label>
                 <Input
@@ -197,12 +197,12 @@ const Contact = () => {
                   onChange={handleChange}
                   placeholder="Project Discussion"
                   required
-                  className="bg-gray-900 border-gray-700 text-white placeholder:text-gray-500 focus:border-emerald-500"
+                  className={`${isDark ? 'bg-gray-900 border-gray-700 text-white placeholder:text-gray-500 focus:border-emerald-500' : 'bg-white border-gray-300 text-gray-900 placeholder:text-gray-400 focus:border-emerald-500'}`}
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-gray-400 mb-2 text-sm">
+                <label htmlFor="message" className={`block mb-2 text-sm ${isDark ? 'text-gray-400' : 'text-gray-700'}`}>
                   Message
                 </label>
                 <Textarea
@@ -213,16 +213,17 @@ const Contact = () => {
                   placeholder="Tell me about your project..."
                   required
                   rows={5}
-                  className="bg-gray-900 border-gray-700 text-white placeholder:text-gray-500 focus:border-emerald-500 resize-none"
+                  className={`resize-none ${isDark ? 'bg-gray-900 border-gray-700 text-white placeholder:text-gray-500 focus:border-emerald-500' : 'bg-white border-gray-300 text-gray-900 placeholder:text-gray-400 focus:border-emerald-500'}`}
                 />
               </div>
 
               <Button
                 type="submit"
-                className="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-6 text-lg group transition-all duration-300"
+                disabled={isSubmitting}
+                className="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-6 text-lg group transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Send Message
-                <Send className="ml-2 group-hover:translate-x-1 transition-transform duration-300" size={20} />
+                {isSubmitting ? 'Sending...' : 'Send Message'}
+                {!isSubmitting && <Send className="ml-2 group-hover:translate-x-1 transition-transform duration-300" size={20} />}
               </Button>
             </form>
           </Card>
