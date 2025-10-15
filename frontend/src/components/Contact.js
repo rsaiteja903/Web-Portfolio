@@ -124,12 +124,12 @@ const Contact = () => {
                   <div>
                     <p className={`text-sm ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>Phone</p>
                     <a
-                      href={personalInfo.github}
+                      href="tel:+19406296780"
                       target="_blank"
                       rel="noopener noreferrer"
                       className={`hover:text-emerald-500 transition-colors duration-300 ${isDark ? 'text-white' : 'text-gray-900'}`}
                     >
-                      Contact me
+                      Contact me : +1 (940) 629-6780
                     </a>
                   </div>
                 </div>
