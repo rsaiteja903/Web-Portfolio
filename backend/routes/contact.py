@@ -1,19 +1,12 @@
 from fastapi import APIRouter, HTTPException, Request
 from models.contact import ContactMessageCreate, ContactMessage, ContactMessageResponse
-from motor.motor_asyncio import AsyncIOMotorClient
-import os
 from datetime import datetime, timedelta
 from typing import List, Optional
 
 router = APIRouter()
 
-# Get database connection
-mongo_url = os.environ['MONGO_URL']
-client = AsyncIOMotorClient(mongo_url)
-db = client[os.environ['DB_NAME']]
-
 # Rate limiting helper
-async def check_rate_limit(ip_address: str) -> bool:
+async def check_rate_limit(db, ip_address: str) -> bool:
     """Check if IP has exceeded rate limit (5 messages per hour)"""
     one_hour_ago = datetime.utcnow() - timedelta(hours=1)
     
@@ -30,11 +23,14 @@ async def create_contact_message(contact_data: ContactMessageCreate, request: Re
     Create a new contact message
     """
     try:
+        # Get database from app state
+        from server import db
+        
         # Get IP address
         ip_address = request.client.host
         
         # Check rate limit
-        if not await check_rate_limit(ip_address):
+        if not await check_rate_limit(db, ip_address):
             raise HTTPException(
                 status_code=429,
                 detail="Too many requests. Please try again later."
@@ -73,6 +69,9 @@ async def get_contact_messages(
     Get all contact messages (admin endpoint)
     """
     try:
+        # Get database from app state
+        from server import db
+        
         # Build query
         query = {}
         if status:
@@ -109,6 +108,9 @@ async def update_message_status(message_id: str, status: str):
     Update message status (admin endpoint)
     """
     try:
+        # Get database from app state
+        from server import db
+        
         valid_statuses = ["new", "read", "replied"]
         if status not in valid_statuses:
             raise HTTPException(
