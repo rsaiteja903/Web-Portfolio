@@ -1,6 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
+import { ThemeProvider } from './contexts/ThemeContext';
+import AnimatedBackground from './components/AnimatedBackground';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -13,7 +15,16 @@ import { Toaster } from './components/ui/toaster';
 
 const Portfolio = () => {
   return (
-    <div className="min-h-screen bg-gray-950">
+    <ThemeProvider>
+      <PortfolioContent />
+    </ThemeProvider>
+  );
+};
+
+const PortfolioContent = () => {
+  return (
+    <div className="min-h-screen transition-colors duration-300">
+      <AnimatedBackground />
       <Navbar />
       <Hero />
       <About />
