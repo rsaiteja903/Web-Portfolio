@@ -11,7 +11,7 @@ const Experience = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-            Work <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">Experience</span>
+            Work <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">Experience</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
             Professional journey and key contributions
@@ -23,13 +23,13 @@ const Experience = () => {
           {experience.map((exp) => (
             <Card
               key={exp.id}
-              className="bg-gray-900/50 border-gray-800 p-8 hover:border-blue-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10"
+              className="bg-gray-900/50 border-gray-800 p-8 hover:border-emerald-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-emerald-500/10"
             >
               <div className="flex flex-col lg:flex-row gap-6">
                 {/* Company Logo Placeholder */}
                 <div className="flex-shrink-0">
-                  <div className="w-20 h-20 bg-gradient-to-br from-blue-500/20 to-blue-700/20 rounded-lg flex items-center justify-center border border-blue-500/30">
-                    <Briefcase className="text-blue-400" size={32} />
+                  <div className="w-20 h-20 bg-gradient-to-br from-emerald-500/20 to-emerald-700/20 rounded-lg flex items-center justify-center border border-emerald-500/30">
+                    <Briefcase className="text-emerald-400" size={32} />
                   </div>
                 </div>
 
@@ -40,7 +40,7 @@ const Experience = () => {
                     <h3 className="text-2xl font-bold text-white mb-2">
                       {exp.title}
                     </h3>
-                    <p className="text-blue-400 text-lg font-medium mb-3">
+                    <p className="text-emerald-400 text-lg font-medium mb-3">
                       {exp.company}
                     </p>
                     <div className="flex flex-wrap gap-4 text-sm">
@@ -61,7 +61,7 @@ const Experience = () => {
                     <ul className="space-y-2">
                       {exp.responsibilities.map((resp, index) => (
                         <li key={index} className="flex items-start gap-3 text-gray-400">
-                          <CheckCircle2 className="text-blue-400 flex-shrink-0 mt-1" size={18} />
+                          <CheckCircle2 className="text-emerald-400 flex-shrink-0 mt-1" size={18} />
                           <span>{resp}</span>
                         </li>
                       ))}
@@ -76,7 +76,7 @@ const Experience = () => {
                         <Badge
                           key={index}
                           variant="secondary"
-                          className="bg-blue-500/10 text-blue-400 border border-blue-500/30 hover:bg-blue-500/20 transition-colors duration-300"
+                          className="bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 hover:bg-emerald-500/20 transition-colors duration-300"
                         >
                           {tech}
                         </Badge>

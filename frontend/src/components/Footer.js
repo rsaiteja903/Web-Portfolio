@@ -17,7 +17,7 @@ const Footer = () => {
           <div>
             <button
               onClick={scrollToTop}
-              className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300"
+              className="text-2xl font-bold bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300"
             >
               {personalInfo.name.split(' ').map(n => n[0]).join('')}
             </button>
@@ -39,7 +39,7 @@ const Footer = () => {
                         element.scrollIntoView({ behavior: 'smooth' });
                       }
                     }}
-                    className="text-gray-400 hover:text-blue-400 transition-colors duration-300 text-sm"
+                    className="text-gray-400 hover:text-emerald-400 transition-colors duration-300 text-sm"
                   >
                     {link}
                   </button>
@@ -54,7 +54,7 @@ const Footer = () => {
             <div className="flex gap-4">
               <a
                 href={`mailto:${personalInfo.email}`}
-                className="p-3 bg-gray-800 rounded-lg text-gray-300 hover:text-blue-400 hover:bg-gray-700 transition-all duration-300"
+                className="p-3 bg-gray-800 rounded-lg text-gray-300 hover:text-emerald-400 hover:bg-gray-700 transition-all duration-300"
               >
                 <Mail size={20} />
               </a>
@@ -62,7 +62,7 @@ const Footer = () => {
                 href={personalInfo.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 bg-gray-800 rounded-lg text-gray-300 hover:text-blue-400 hover:bg-gray-700 transition-all duration-300"
+                className="p-3 bg-gray-800 rounded-lg text-gray-300 hover:text-emerald-400 hover:bg-gray-700 transition-all duration-300"
               >
                 <Linkedin size={20} />
               </a>
@@ -70,7 +70,7 @@ const Footer = () => {
                 href={personalInfo.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 bg-gray-800 rounded-lg text-gray-300 hover:text-blue-400 hover:bg-gray-700 transition-all duration-300"
+                className="p-3 bg-gray-800 rounded-lg text-gray-300 hover:text-emerald-400 hover:bg-gray-700 transition-all duration-300"
               >
                 <Github size={20} />
               </a>

@@ -18,7 +18,7 @@ const Projects = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-            Featured <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">Projects</span>
+            Featured <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">Projects</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
             A showcase of my recent work and technical innovations
@@ -30,7 +30,7 @@ const Projects = () => {
           {projects.map((project) => (
             <Card
               key={project.id}
-              className="bg-gray-800/50 border-gray-700 overflow-hidden group hover:border-blue-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10"
+              className="bg-gray-800/50 border-gray-700 overflow-hidden group hover:border-emerald-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-emerald-500/10"
             >
               {/* Project Image */}
               <div className="relative h-48 overflow-hidden">
@@ -44,7 +44,7 @@ const Projects = () => {
 
               {/* Project Content */}
               <div className="p-6">
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors duration-300">
+                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors duration-300">
                   {project.title}
                 </h3>
                 
@@ -65,7 +65,7 @@ const Projects = () => {
                         <ul className="space-y-1">
                           {project.features.map((feature, index) => (
                             <li key={index} className="text-gray-400 text-sm flex items-start gap-2">
-                              <span className="text-blue-400 mt-1">•</span>
+                              <span className="text-emerald-400 mt-1">•</span>
                               <span>{feature}</span>
                             </li>
                           ))}
@@ -81,7 +81,7 @@ const Projects = () => {
                     <Badge
                       key={index}
                       variant="secondary"
-                      className="bg-blue-500/10 text-blue-400 border border-blue-500/30 text-xs"
+                      className="bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 text-xs"
                     >
                       {tech}
                     </Badge>
@@ -101,7 +101,7 @@ const Projects = () => {
                   <Button
                     onClick={() => toggleProject(project.id)}
                     variant="outline"
-                    className="flex-1 border-gray-700 text-gray-300 hover:bg-gray-800 hover:text-blue-400 text-sm transition-all duration-300"
+                    className="flex-1 border-gray-700 text-gray-300 hover:bg-gray-800 hover:text-emerald-400 text-sm transition-all duration-300"
                   >
                     {expandedProject === project.id ? (
                       <>
@@ -117,7 +117,7 @@ const Projects = () => {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2 border border-gray-700 rounded-md text-gray-300 hover:text-blue-400 hover:border-blue-500/50 transition-all duration-300"
+                    className="p-2 border border-gray-700 rounded-md text-gray-300 hover:text-emerald-400 hover:border-emerald-500/50 transition-all duration-300"
                   >
                     <Github size={18} />
                   </a>
@@ -125,7 +125,7 @@ const Projects = () => {
                     href={project.demo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2 border border-gray-700 rounded-md text-gray-300 hover:text-blue-400 hover:border-blue-500/50 transition-all duration-300"
+                    className="p-2 border border-gray-700 rounded-md text-gray-300 hover:text-emerald-400 hover:border-emerald-500/50 transition-all duration-300"
                   >
                     <ExternalLink size={18} />
                   </a>

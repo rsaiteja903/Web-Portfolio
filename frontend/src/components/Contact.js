@@ -38,7 +38,7 @@ const Contact = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-            Get In <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">Touch</span>
+            Get In <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">Touch</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
             Have a question or want to work together? I'd love to hear from you.
@@ -57,16 +57,16 @@ const Contact = () => {
 
             {/* Contact Cards */}
             <div className="space-y-4">
-              <Card className="bg-gray-800/50 border-gray-700 p-6 hover:border-blue-500/50 transition-all duration-300 group">
+              <Card className="bg-gray-800/50 border-gray-700 p-6 hover:border-emerald-500/50 transition-all duration-300 group">
                 <div className="flex items-center gap-4">
-                  <div className="p-3 bg-blue-500/10 rounded-lg group-hover:bg-blue-500/20 transition-colors duration-300">
-                    <Mail className="text-blue-400" size={24} />
+                  <div className="p-3 bg-emerald-500/10 rounded-lg group-hover:bg-emerald-500/20 transition-colors duration-300">
+                    <Mail className="text-emerald-400" size={24} />
                   </div>
                   <div>
                     <p className="text-gray-400 text-sm">Email</p>
                     <a
                       href={`mailto:${personalInfo.email}`}
-                      className="text-white hover:text-blue-400 transition-colors duration-300"
+                      className="text-white hover:text-emerald-400 transition-colors duration-300"
                     >
                       {personalInfo.email}
                     </a>
@@ -74,10 +74,10 @@ const Contact = () => {
                 </div>
               </Card>
 
-              <Card className="bg-gray-800/50 border-gray-700 p-6 hover:border-blue-500/50 transition-all duration-300 group">
+              <Card className="bg-gray-800/50 border-gray-700 p-6 hover:border-emerald-500/50 transition-all duration-300 group">
                 <div className="flex items-center gap-4">
-                  <div className="p-3 bg-blue-500/10 rounded-lg group-hover:bg-blue-500/20 transition-colors duration-300">
-                    <Linkedin className="text-blue-400" size={24} />
+                  <div className="p-3 bg-emerald-500/10 rounded-lg group-hover:bg-emerald-500/20 transition-colors duration-300">
+                    <Linkedin className="text-emerald-400" size={24} />
                   </div>
                   <div>
                     <p className="text-gray-400 text-sm">LinkedIn</p>
@@ -85,7 +85,7 @@ const Contact = () => {
                       href={personalInfo.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-white hover:text-blue-400 transition-colors duration-300"
+                      className="text-white hover:text-emerald-400 transition-colors duration-300"
                     >
                       Connect with me
                     </a>
@@ -93,10 +93,10 @@ const Contact = () => {
                 </div>
               </Card>
 
-              <Card className="bg-gray-800/50 border-gray-700 p-6 hover:border-blue-500/50 transition-all duration-300 group">
+              <Card className="bg-gray-800/50 border-gray-700 p-6 hover:border-emerald-500/50 transition-all duration-300 group">
                 <div className="flex items-center gap-4">
-                  <div className="p-3 bg-blue-500/10 rounded-lg group-hover:bg-blue-500/20 transition-colors duration-300">
-                    <Github className="text-blue-400" size={24} />
+                  <div className="p-3 bg-emerald-500/10 rounded-lg group-hover:bg-emerald-500/20 transition-colors duration-300">
+                    <Github className="text-emerald-400" size={24} />
                   </div>
                   <div>
                     <p className="text-gray-400 text-sm">GitHub</p>
@@ -104,7 +104,7 @@ const Contact = () => {
                       href={personalInfo.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-white hover:text-blue-400 transition-colors duration-300"
+                      className="text-white hover:text-emerald-400 transition-colors duration-300"
                     >
                       View my work
                     </a>
@@ -112,10 +112,10 @@ const Contact = () => {
                 </div>
               </Card>
 
-              <Card className="bg-gray-800/50 border-gray-700 p-6 hover:border-blue-500/50 transition-all duration-300 group">
+              <Card className="bg-gray-800/50 border-gray-700 p-6 hover:border-emerald-500/50 transition-all duration-300 group">
                 <div className="flex items-center gap-4">
-                  <div className="p-3 bg-blue-500/10 rounded-lg group-hover:bg-blue-500/20 transition-colors duration-300">
-                    <MapPin className="text-blue-400" size={24} />
+                  <div className="p-3 bg-emerald-500/10 rounded-lg group-hover:bg-emerald-500/20 transition-colors duration-300">
+                    <MapPin className="text-emerald-400" size={24} />
                   </div>
                   <div>
                     <p className="text-gray-400 text-sm">Location</p>
@@ -142,7 +142,7 @@ const Contact = () => {
                   onChange={handleChange}
                   placeholder="John Doe"
                   required
-                  className="bg-gray-900 border-gray-700 text-white placeholder:text-gray-500 focus:border-blue-500"
+                  className="bg-gray-900 border-gray-700 text-white placeholder:text-gray-500 focus:border-emerald-500"
                 />
               </div>
 
@@ -158,7 +158,7 @@ const Contact = () => {
                   onChange={handleChange}
                   placeholder="john@example.com"
                   required
-                  className="bg-gray-900 border-gray-700 text-white placeholder:text-gray-500 focus:border-blue-500"
+                  className="bg-gray-900 border-gray-700 text-white placeholder:text-gray-500 focus:border-emerald-500"
                 />
               </div>
 
@@ -174,7 +174,7 @@ const Contact = () => {
                   onChange={handleChange}
                   placeholder="Project Discussion"
                   required
-                  className="bg-gray-900 border-gray-700 text-white placeholder:text-gray-500 focus:border-blue-500"
+                  className="bg-gray-900 border-gray-700 text-white placeholder:text-gray-500 focus:border-emerald-500"
                 />
               </div>
 
@@ -190,13 +190,13 @@ const Contact = () => {
                   placeholder="Tell me about your project..."
                   required
                   rows={5}
-                  className="bg-gray-900 border-gray-700 text-white placeholder:text-gray-500 focus:border-blue-500 resize-none"
+                  className="bg-gray-900 border-gray-700 text-white placeholder:text-gray-500 focus:border-emerald-500 resize-none"
                 />
               </div>
 
               <Button
                 type="submit"
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white py-6 text-lg group transition-all duration-300"
+                className="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-6 text-lg group transition-all duration-300"
               >
                 Send Message
                 <Send className="ml-2 group-hover:translate-x-1 transition-transform duration-300" size={20} />

@@ -8,11 +8,11 @@ const Skills = () => {
     <div className="space-y-2">
       <div className="flex justify-between items-center">
         <span className="text-white font-medium">{name}</span>
-        <span className="text-blue-400 text-sm">{level}%</span>
+        <span className="text-emerald-400 text-sm">{level}%</span>
       </div>
       <div className="h-2 bg-gray-800 rounded-full overflow-hidden">
         <div
-          className="h-full bg-gradient-to-r from-blue-500 to-blue-600 rounded-full transition-all duration-1000 ease-out"
+          className="h-full bg-gradient-to-r from-emerald-500 to-emerald-600 rounded-full transition-all duration-1000 ease-out"
           style={{ width: `${level}%` }}
         ></div>
       </div>
@@ -25,7 +25,7 @@ const Skills = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-            Skills & <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">Expertise</span>
+            Skills & <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">Expertise</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
             Technical proficiencies and core competencies
@@ -36,7 +36,7 @@ const Skills = () => {
           {/* Languages */}
           <Card className="bg-gray-900/50 border-gray-800 p-8">
             <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
-              <span className="w-2 h-8 bg-gradient-to-b from-blue-400 to-blue-600 rounded-full"></span>
+              <span className="w-2 h-8 bg-gradient-to-b from-emerald-400 to-emerald-600 rounded-full"></span>
               Programming Languages
             </h3>
             <div className="space-y-6">
@@ -49,7 +49,7 @@ const Skills = () => {
           {/* Frameworks */}
           <Card className="bg-gray-900/50 border-gray-800 p-8">
             <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
-              <span className="w-2 h-8 bg-gradient-to-b from-blue-400 to-blue-600 rounded-full"></span>
+              <span className="w-2 h-8 bg-gradient-to-b from-emerald-400 to-emerald-600 rounded-full"></span>
               Frameworks & Libraries
             </h3>
             <div className="space-y-6">
@@ -62,7 +62,7 @@ const Skills = () => {
           {/* Tools */}
           <Card className="bg-gray-900/50 border-gray-800 p-8">
             <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
-              <span className="w-2 h-8 bg-gradient-to-b from-blue-400 to-blue-600 rounded-full"></span>
+              <span className="w-2 h-8 bg-gradient-to-b from-emerald-400 to-emerald-600 rounded-full"></span>
               Tools & Technologies
             </h3>
             <div className="space-y-6">
@@ -75,7 +75,7 @@ const Skills = () => {
           {/* Cloud */}
           <Card className="bg-gray-900/50 border-gray-800 p-8">
             <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
-              <span className="w-2 h-8 bg-gradient-to-b from-blue-400 to-blue-600 rounded-full"></span>
+              <span className="w-2 h-8 bg-gradient-to-b from-emerald-400 to-emerald-600 rounded-full"></span>
               Cloud & AWS
             </h3>
             <div className="space-y-6">
@@ -88,7 +88,7 @@ const Skills = () => {
           {/* Databases */}
           <Card className="bg-gray-900/50 border-gray-800 p-8">
             <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
-              <span className="w-2 h-8 bg-gradient-to-b from-blue-400 to-blue-600 rounded-full"></span>
+              <span className="w-2 h-8 bg-gradient-to-b from-emerald-400 to-emerald-600 rounded-full"></span>
               Databases
             </h3>
             <div className="space-y-6">
@@ -101,7 +101,7 @@ const Skills = () => {
           {/* Competencies */}
           <Card className="bg-gray-900/50 border-gray-800 p-8">
             <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
-              <span className="w-2 h-8 bg-gradient-to-b from-blue-400 to-blue-600 rounded-full"></span>
+              <span className="w-2 h-8 bg-gradient-to-b from-emerald-400 to-emerald-600 rounded-full"></span>
               Core Competencies
             </h3>
             <div className="flex flex-wrap gap-3">
@@ -109,7 +109,7 @@ const Skills = () => {
                 <Badge
                   key={index}
                   variant="secondary"
-                  className="bg-blue-500/10 text-blue-400 border border-blue-500/30 hover:bg-blue-500/20 transition-colors duration-300 text-sm px-4 py-2"
+                  className="bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 hover:bg-emerald-500/20 transition-colors duration-300 text-sm px-4 py-2"
                 >
                   {competency}
                 </Badge>
