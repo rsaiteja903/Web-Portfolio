@@ -2,15 +2,18 @@ import React from 'react';
 import { Card } from './ui/card';
 import { Badge } from './ui/badge';
 import { skills } from '../utils/mockData';
+import { useTheme } from '../contexts/ThemeContext';
 
 const Skills = () => {
+  const { isDark } = useTheme();
+  
   const SkillBar = ({ name, level }) => (
     <div className="space-y-2">
       <div className="flex justify-between items-center">
-        <span className="text-white font-medium">{name}</span>
-        <span className="text-emerald-400 text-sm">{level}%</span>
+        <span className={`font-medium ${isDark ? 'text-white' : 'text-gray-900'}`}>{name}</span>
+        <span className="text-emerald-500 text-sm">{level}%</span>
       </div>
-      <div className="h-2 bg-gray-800 rounded-full overflow-hidden">
+      <div className={`h-2 rounded-full overflow-hidden ${isDark ? 'bg-gray-800' : 'bg-gray-200'}`}>
         <div
           className="h-full bg-gradient-to-r from-emerald-500 to-emerald-600 rounded-full transition-all duration-1000 ease-out"
           style={{ width: `${level}%` }}
@@ -20,7 +23,7 @@ const Skills = () => {
   );
 
   return (
-    <section id="skills" className="py-20 bg-gray-950">
+    <section id="skills" className={`py-20 ${isDark ? 'bg-gray-950' : 'bg-white'}`}>
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
