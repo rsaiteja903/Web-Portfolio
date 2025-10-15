@@ -69,6 +69,9 @@ async def get_status_checks():
     
     return status_checks
 
+# Include contact routes
+api_router.include_router(contact_router, tags=["contact"])
+
 # Include the router in the main app
 app.include_router(api_router)
 
