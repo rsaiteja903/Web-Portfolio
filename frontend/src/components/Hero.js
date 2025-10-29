@@ -122,7 +122,7 @@ const Hero = () => {
 
                   onClick={() =>
                       window.open(
-                        'https://drive.google.com/file/d/1evHImDJdXSahsIgaVuAvrgCfLb8lWByR/view?usp=drive_link',
+                        'https://drive.google.com/file/d/1evHImDJdXSahsIgaVuAvrgCfLb8lWByR/view?usp=sharing',
                         '_blank',
                         'noopener,noreferrer'
                       )
