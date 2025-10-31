@@ -94,7 +94,7 @@ export const projects = [
     "Responsive design for desktop and mobile",
     "CSV export and AI chat interface"
   ],
-  github: "https://github.com/yourusername/smart-expense-tracker",
+  github: "https://github.com/rsaiteja903/Smart-Expense-Tracker",
   demo: "#"
 },
   {
@@ -110,7 +110,7 @@ export const projects = [
       "Visual analytics with interactive charts",
       "Secure authentication with JWT"
     ],
-    github: "#",
+    github: "https://github.com/rsaiteja903/Personal_Finance_Management_Application",
     demo: "#"
   },
   {
