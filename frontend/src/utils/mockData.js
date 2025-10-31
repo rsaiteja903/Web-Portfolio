@@ -67,22 +67,36 @@ export const experience = [
 ];
 
 export const projects = [
-  {
-    id: 1,
-    title: "IT Help Desk Automation System",
-    description: "Developed a comprehensive automation system to streamline IT support operations and ticket management.",
-    longDescription: "Built an end-to-end IT help desk automation platform that integrates with Google Workspace APIs to automatically process and route support tickets. The system features intelligent ticket categorization, automated responses, and real-time status tracking. Reduced average ticket resolution time by 60% and improved team efficiency.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
-    technologies: ["Flask", "Python", "MySQL", "Google Workspace APIs", "REST APIs"],
-    features: [
-      "Automated ticket routing and assignment",
-      "Google Workspace integration for seamless communication",
-      "Real-time dashboard for ticket tracking",
-      "Analytics and reporting module"
-    ],
-    github: "#",
-    demo: "#"
-  },
+{
+  id: 1,
+  title: "Smart Expense Tracker",
+  description: "A full-stack personal finance web app that tracks expenses and provides AI-powered financial insights using OpenAI GPT-4o-mini.",
+  longDescription: "Developed a comprehensive expense management platform enabling users to track, categorize, and analyze their spending with AI-driven insights. Integrated OpenAI GPT-4o-mini to deliver personalized financial recommendations and spending analysis. Features include OCR-based receipt scanning via Tesseract, JWT-secured authentication, interactive analytics dashboards (Chart.js), and responsive UI with dark/light mode. Enhanced financial awareness and simplified personal finance management for end users.",
+  image: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=800&q=80",
+  technologies: [
+    "FastAPI",
+    "Python",
+    "MongoDB",
+    "React 19",
+    "Redux Toolkit",
+    "Chart.js",
+    "Tesseract OCR",
+    "OpenAI GPT-4o-mini",
+    "JWT Authentication"
+  ],
+  features: [
+    "Expense tracking with add/edit/delete and category management",
+    "AI-powered financial insights using GPT-4o-mini",
+    "Receipt OCR for automatic data extraction",
+    "Interactive charts for spending analytics (Chart.js)",
+    "JWT-based user authentication and profile management",
+    "Dark/Light mode with persistent theme",
+    "Responsive design for desktop and mobile",
+    "CSV export and AI chat interface"
+  ],
+  github: "https://github.com/yourusername/smart-expense-tracker",
+  demo: "#"
+},
   {
     id: 2,
     title: "Personal Finance Management System",
@@ -128,7 +142,7 @@ export const skills = {
   frameworks: [
     { name: "Spring Boot", level: 85 },
     { name: "React", level: 80 },
-    { name: "Flask", level: 85 },
+    { name: "FastAPI", level: 85 },
     { name: "Node.js", level: 75 }
   ],
   tools: [
